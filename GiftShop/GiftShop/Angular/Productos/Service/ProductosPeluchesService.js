@@ -10,8 +10,7 @@
         };
 
         this.RemoveFromCart = function (Product) {
-            return $http.post(this.urlBase + 'RemoveProductoPeluche', Product).then(handleSuccess, handleError);
-
+            return $http.post(this.urlBase + 'RemoveProductoPeluche', Product).then(handleSuccess, handleError)
         };
 
 
