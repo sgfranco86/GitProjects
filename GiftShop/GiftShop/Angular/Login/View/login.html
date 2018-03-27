@@ -1,0 +1,52 @@
+﻿<!--<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <p>Hi</p>
+</body>-->
+
+<style>
+    .form-control {
+        height: 45px;
+        font-size: 20px !important;
+    }
+
+    .btn-log {
+        position: relative;
+        top: -7.5px;
+        left: -30px;
+        text-decoration: none;
+    }
+
+        .btn-log:hover {
+            position: relative;
+            top: -7.5px;
+            left: -30px;
+            text-decoration: none;
+        }
+</style>
+<div class="container">
+    <div class="row" style="margin-top: 35%;">
+        <img class="img-responsive" src="../../Images/giftshop.png" style="margin: 0 auto;" width="50%" height="30%" />
+    </div>
+    <br />
+    <div class="row" style="padding-top: 20px;">
+        <form accept-charset="UTF-8" role="form" ng-submit="Logon()" novalidate name="formlogin"
+              autocomplete="off">
+            <div class="col-md-3 col-md-offset-2" ng-class="{ 'has-error' : formlogin.user_id.$invalid && !formlogin.user_id.$pristine}">
+                <input type="text" ng-pattern="/^[0-9]*$/" class="form-control" placeholder="User ID"
+                       ng-model="user_id" name="user_id" aria-describedby="basic-addon1" required autofocus />
+            </div>
+            <div class="col-md-4" ng-class="{ 'has-error' : formlogin.passwordx.$invalid && !formlogin.passwordx.$pristine}">
+                <input type="password" class="form-control" placeholder="Password" ng-model="passwordx"
+                       name="passwordx" aria-describedby="basic-addon2" required />
+
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn-link fa fa-sign-in fa-4x btn-log" uib-tooltip="Logon"
+                        ng-disabled="formlogin.$invalid"></button>
+            </div>
+        </form>
+    </div>
+</div>

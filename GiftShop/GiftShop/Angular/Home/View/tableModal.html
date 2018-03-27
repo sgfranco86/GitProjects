@@ -1,0 +1,21 @@
+﻿<style>
+    .pagination {
+        margin-bottom: -7px !important;
+    }
+
+    .panel {
+        margin-bottom: 0 !important;
+    }
+</style>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        {{title}}
+        <button type="button" class="close" ng-click="cancel();">
+            &times;
+        </button>
+    </div>
+    <div class="panel-body">
+        <deliverex-table data="list" maxpages="maxpages" maxitems="maxitems" pagination="pagination"
+                         headers="headers" fn="fn"></deliverex-table>
+    </div>
+</div>

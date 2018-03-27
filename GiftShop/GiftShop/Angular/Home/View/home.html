@@ -1,0 +1,101 @@
+﻿<script>
+    $(function () {
+        $('#side-menu').metisMenu({
+            toggle: false // disable the auto collapse. Default: true.
+        });
+    });
+</script>
+<div id="wrapper" ng-init="init()">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: -19px;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="home">
+                <img alt="Giftshop" src="../../../Images/giftshop.png" style="height: 30px" />
+            </a>
+        </div>
+        <!-- /.navbar-header -->
+        <ul class="nav navbar-nav navbar-right collapse navbar-collapse" collapse="navCollapsed">
+            
+            <li><a>{{userName}}</a></li>
+            <li><span style="vertical-align:central; cursor:pointer" class="fa fa-2x fa-shopping-cart fa-align-center"  ui-sref="home.Shoppingcart"></span></li>  
+            <li class="dropdown" uib-dropdown>
+                <a class="dropdown-toggle" data-toggle="dropdown" uib-dropdown-toggle><i class="fa fa-user fa-fw"></i><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <!-- openChangePassword() -->
+                    <li ng-hide="user.userType==='NoRegistrado'"><a ng-click="ChangePasswd()"><i class="fa fa-key fa-fw"></i>&nbsp;Change Password</a></li>
+                    <li ng-hide="user.userType==='NoRegistrado'"><a ng-click="ShortPasswd()"><i class="fa fa-key fa-fw"></i>&nbsp;Short Password</a></li>
+                    <li class="divider"></li>
+                    <li><a ng-click="logout()"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Log out</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- /.navbar-top-links -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav in" id="side-menu">
+                    <li>&nbsp; </li>
+                    <li class="">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>&nbsp;&nbsp;Products<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;" ng-init="Tab='Home_Site'">
+                            <li ng-show="user.super_user_access==='Y'"><a ui-sref=".Site_site">Sports</a> </li>
+                            <li ng-show="true" id="li-users"><a ui-sref="home.ProductsBears">Bears</a> </li>
+                            <li ng-show="true"><a ui-sref="home.Site_routes">Souvenirs</a> </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li ng-show="user.userType==='Admin'"><a ui-sref="home.AdminProducts"><i class="fa fa-cube fa-fw"></i>&nbsp;&nbsp;Admin Products</a> </li>
+                    <li ng-click="ChangePasswd()">
+                        <a href="">
+                            <i class="fa fa-key fa-fw"></i>&nbsp;&nbsp;Change
+                            Password
+                        </a>
+                    </li>
+                    <li ng-click="ShortPasswd()">
+                        <a href="">
+                            <i class="fa fa-key fa-fw"></i>&nbsp;&nbsp;Short
+                            Password
+                        </a>
+                    </li>
+                    <!--level 3
+                        <li class="">
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level collapse">
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>-->
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+    <div id="page-wrapper" ui-view="container" class="view-container" style="min-height: 680px;">
+    </div>
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->

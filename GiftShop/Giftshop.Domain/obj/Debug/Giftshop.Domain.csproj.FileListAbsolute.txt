@@ -1,0 +1,5 @@
+C:\Users\salvador.garcia.ti\Documents\Visual Studio 2015\Projects\GiftShop\Giftshop.Domain\bin\Debug\Giftshop.Domain.dll
+C:\Users\salvador.garcia.ti\Documents\Visual Studio 2015\Projects\GiftShop\Giftshop.Domain\bin\Debug\Giftshop.Domain.pdb
+C:\Users\salvador.garcia.ti\Documents\Visual Studio 2015\Projects\GiftShop\Giftshop.Domain\obj\Debug\Giftshop.Domain.csprojResolveAssemblyReference.cache
+C:\Users\salvador.garcia.ti\Documents\Visual Studio 2015\Projects\GiftShop\Giftshop.Domain\obj\Debug\Giftshop.Domain.dll
+C:\Users\salvador.garcia.ti\Documents\Visual Studio 2015\Projects\GiftShop\Giftshop.Domain\obj\Debug\Giftshop.Domain.pdb

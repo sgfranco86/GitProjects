@@ -1,0 +1,190 @@
+﻿.fixposition
+{
+	position: absolute;
+	font-size: 0;
+	white-space: nowrap;
+}
+
+@media screen and (min-width: 1200px)
+{
+	.modal-xl
+	{
+		width: 90%; /* New width for xl-large modal */
+	}
+}
+
+@media screen and (min-width: 600px)
+{
+	.modal-mdd
+	{
+		width: 70%; /* New width for md modal */
+	}
+}
+
+@media screen and (min-width: 600px)
+{
+	.modal-lg
+	{
+		width: 55%; /* New width for md modal */
+	}
+}
+
+@media screen and (min-width: 150px)
+{
+	.modal-small
+	{
+		width: 15%; /* New width for md modal */
+	}
+}
+
+.has-notsave .form-control2
+{
+	border-color: #428bca;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.control-addon
+{
+	margin-top: 1px;
+	margin-bottom: -1px !important;
+}
+
+.table-responsive
+{
+	width: 100%;
+	margin-bottom: 5px;
+	display: block;
+	overflow-y: hidden;
+	overflow-x: auto;/*scroll;*/
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	border: 0px solid #DDD;
+	-webkit-overflow-scrolling: touch;
+}
+
+.clear::-ms-clear
+{
+	display: none;
+}
+
+
+.horizontal-scroll {
+  overflow: hidden;
+  overflow-x: auto;
+  clear: both;
+  width: 100%;
+}
+
+
+
+
+.form-control2:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.6);
+}
+
+
+.form-control2 {
+    height: 45px;
+    font-size: 20px ;
+}
+
+
+.form-control2, .input-group-addon, select, .btn {
+    font-size: 13px ;
+    height: 26px;
+    padding: 4px 6px;
+    margin-bottom: 5px;
+}
+
+
+.form-control2 {
+	display: inline; 
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
+/* ::before, ::after { */
+    /* -webkit-box-sizing: border-box; */
+    /* -moz-box-sizing: border-box; */
+    /* box-sizing: border-box; */
+/* } */
+
+input {
+    line-height: normal;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fg-w
+{
+    padding: 16px 10px; 
+    height: 40px;
+}
+
+#btn-Dep
+{
+  padding: 0px 20px;
+  font-size: 15px;
+  height: 30px;
+}
+#btn-St
+{
+  padding: 0px 20px;
+  font-size: 15px;
+  height: 30px;
+}
+
+.btnlarge
+{
+  padding: 0px 20px;
+  font-size: 15px;
+  height: 30px;
+  margin-right: 5px; 
+}
+
+.btn-Larg
+{
+  padding: 0px 20px;
+  font-size: 15px;
+  height: 30px;
+  margin: 10px 0px;
+}
+
+.yellowcol
+{
+color: #a6b900;
+}

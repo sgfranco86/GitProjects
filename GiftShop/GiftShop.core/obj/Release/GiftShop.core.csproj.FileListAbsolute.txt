@@ -1,0 +1,7 @@
+C:\Users\salvador.garcia.ti\documents\visual studio 2015\Projects\GiftShop\GiftShop.core\bin\Release\GiftShop.core.dll
+C:\Users\salvador.garcia.ti\documents\visual studio 2015\Projects\GiftShop\GiftShop.core\bin\Release\GiftShop.core.pdb
+C:\Users\salvador.garcia.ti\documents\visual studio 2015\Projects\GiftShop\GiftShop.core\bin\Release\Giftshop.Domain.dll
+C:\Users\salvador.garcia.ti\documents\visual studio 2015\Projects\GiftShop\GiftShop.core\bin\Release\Giftshop.Domain.pdb
+C:\Users\salvador.garcia.ti\documents\visual studio 2015\Projects\GiftShop\GiftShop.core\obj\Release\GiftShop.core.csprojResolveAssemblyReference.cache
+C:\Users\salvador.garcia.ti\documents\visual studio 2015\Projects\GiftShop\GiftShop.core\obj\Release\GiftShop.core.dll
+C:\Users\salvador.garcia.ti\documents\visual studio 2015\Projects\GiftShop\GiftShop.core\obj\Release\GiftShop.core.pdb

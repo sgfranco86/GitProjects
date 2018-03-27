@@ -1,0 +1,24 @@
+﻿<style>
+    .breadcrumb
+    {
+        padding: 8px 8px;
+        list-style: none;
+        background-color: transparent;
+        font-size: 13px !important;
+    }
+    .breadcrumb > li + li:before
+    {
+        color: rgba(54, 94, 168, 1);
+        content: "\2771\00a0";
+    }
+    
+    .breadcrumb > li
+    {
+        padding-top: 10px;
+    }
+</style>
+<ul class="breadcrumb">
+    <li ng-repeat="state in $navigationState.currentState.path"><span ng-if="!$navigationState.isCurrent(state)">
+        <a ui-sref="{{state.data.settings.goTo}}">{{$navigationState.getDisplayName(state)}}</a>
+    </span><span ng-if="$navigationState.isCurrent(state)">{{$navigationState.getDisplayName(state)}}</span></li>
+</ul>
