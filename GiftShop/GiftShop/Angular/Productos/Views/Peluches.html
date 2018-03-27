@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+<style>
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 12px;
+        font-weight: bold;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 65%;
+        font-weight: bold;
+    }
+    .centered {
+    position: absolute;
+    top: 53%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color:white;
+    font-size: large;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <img src="../../../Images/osopeluche.jpg" class="navbar-left" width="30%" height="35%" />
+        <div class="bottom-left" style="color:darkslategrey; cursor:pointer" ng-click="minorQty(1)">- Remove</div>
+        <div class="bottom-right" style="color:darkslategrey; cursor:pointer" ng-click="setQty(1)">+ Add</div>
+        <div class="centered" style="color:white; font-weight:bolder">{{product.quantity}}</div>
+        
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <button type="button" class="btn-success centered" ng-click="saveToCart()"><span class="btn btn-xl glyphicon glyphicon-save"></span>Add Item To Cart</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

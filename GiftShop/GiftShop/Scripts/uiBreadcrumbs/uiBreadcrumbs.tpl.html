@@ -1,0 +1,24 @@
+<style>
+    .breadcrumb
+    {
+        padding: 8px 8px;
+        list-style: none;
+        background-color: transparent;
+        font-size: 13px !important;
+    }
+    .breadcrumb > li + li:before
+    {
+        color: rgba(54, 94, 168, 1);
+        content: "\2771\00a0";
+    }
+    
+    .breadcrumb > li
+    {
+        padding-top: 10px;
+    }
+</style>
+<ol class="breadcrumb">
+    <li ng-repeat="crumb in breadcrumbs" ng-class="{ active: $last }"><a ui-sref="{{ crumb.route }}"
+        ng-if="!$last">{{ crumb.displayName }}&nbsp;</a><span ng-show="$last">{{ crumb.displayName
+            }}</span> </li>
+</ol>

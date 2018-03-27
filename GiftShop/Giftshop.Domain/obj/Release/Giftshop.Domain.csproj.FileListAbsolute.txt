@@ -1,0 +1,4 @@
+C:\Users\salvador.garcia.ti\Documents\Visual Studio 2015\Projects\GiftShop\Giftshop.Domain\bin\Release\Giftshop.Domain.dll
+C:\Users\salvador.garcia.ti\Documents\Visual Studio 2015\Projects\GiftShop\Giftshop.Domain\bin\Release\Giftshop.Domain.pdb
+C:\Users\salvador.garcia.ti\Documents\Visual Studio 2015\Projects\GiftShop\Giftshop.Domain\obj\Release\Giftshop.Domain.dll
+C:\Users\salvador.garcia.ti\Documents\Visual Studio 2015\Projects\GiftShop\Giftshop.Domain\obj\Release\Giftshop.Domain.pdb
