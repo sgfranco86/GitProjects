@@ -51,71 +51,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GiftShopModel.Context.cs">
+    <Compile Include="GiftShopDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GiftShopModel.Context.tt</DependentUpon>
+      <DependentUpon>GiftShopDBModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="GiftShopModel.cs">
+    <Compile Include="GiftShopDBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GiftShopModel.tt</DependentUpon>
+      <DependentUpon>GiftShopDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="GiftShopModel.Designer.cs">
+    <Compile Include="GiftShopDBModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GiftShopModel.edmx</DependentUpon>
+      <DependentUpon>GiftShopDBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="IDatos\IAuthentication.cs" />
     <Compile Include="IDatos\IProductosPeluche.cs" />
+    <Compile Include="IDatos\IShoppingCart.cs" />
     <Compile Include="IDatos\IUser.cs" />
     <Compile Include="Product.cs">
-      <DependentUpon>GiftShopModel.tt</DependentUpon>
+      <DependentUpon>GiftShopDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AutheticationService.cs" />
     <Compile Include="Services\Productos\ProductoPelucheService.cs" />
+    <Compile Include="Services\ShoppingCart\ShoppingCartService.cs" />
     <Compile Include="Services\UserService.cs" />
-    <Compile Include="Shopping_Cart.cs">
-      <DependentUpon>GiftShopModel.tt</DependentUpon>
+    <Compile Include="ShoppingCart.cs">
+      <DependentUpon>GiftShopDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
-      <DependentUpon>GiftShopModel.tt</DependentUpon>
+      <DependentUpon>GiftShopDBModel.tt</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Giftshop.Domain\Giftshop.Domain.csproj">
-      <Project>{D4A5649E-F61C-458B-AC63-8B69CFBBA130}</Project>
-      <Name>Giftshop.Domain</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="GiftShopModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>GiftShopModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <None Include="GiftShopModel.edmx.diagram">
-      <DependentUpon>GiftShopModel.edmx</DependentUpon>
+    <EntityDeploy Include="GiftShopDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GiftShopDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="GiftShopDBModel.edmx.diagram">
+      <DependentUpon>GiftShopDBModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GiftShopModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GiftShopModel.edmx</DependentUpon>
-      <LastGenOutput>GiftShopModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="GiftShopModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GiftShopModel.edmx</DependentUpon>
-      <LastGenOutput>GiftShopModel.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="GiftShopDBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GiftShopDBModel.edmx</DependentUpon>
+      <LastGenOutput>GiftShopDBModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="GiftShopDBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GiftShopDBModel.edmx</DependentUpon>
+      <LastGenOutput>GiftShopDBModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

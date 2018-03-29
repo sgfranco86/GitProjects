@@ -28,6 +28,7 @@ namespace GiftShop.core.Services.Productos
             {
                 using (GiftShopDBEntities db = new GiftShopDBEntities())
                 {
+                   
                     db.Products.Remove(ProductoPeluche);
                     db.SaveChanges();
                     return true;

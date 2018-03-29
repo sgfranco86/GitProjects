@@ -20,9 +20,9 @@
         <ul class="nav navbar-nav navbar-right collapse navbar-collapse" collapse="navCollapsed">
             
             <li><a>{{userName}}</a></li>
-            <li><span style="vertical-align:central; cursor:pointer" class="fa fa-2x fa-shopping-cart fa-align-center"  ui-sref="home.Shoppingcart"></span></li>  
+            <li><a class="dropdown-toggle" data-toggle="dropdown" uib-dropdown-toggle><i class="fa fa-shopping-cart fa-2x" ui-sref="home.shopping_Cart" tooltip="Shopping cart"></i><span class="caret"></span></a></li>  
             <li class="dropdown" uib-dropdown>
-                <a class="dropdown-toggle" data-toggle="dropdown" uib-dropdown-toggle><i class="fa fa-user fa-fw"></i><span class="caret"></span></a>
+                <a class="dropdown-toggle" data-toggle="dropdown" uib-dropdown-toggle><i class="fa fa-user fa-2x"></i><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <!-- openChangePassword() -->
                     <li ng-hide="user.userType==='NoRegistrado'"><a ng-click="ChangePasswd()"><i class="fa fa-key fa-fw"></i>&nbsp;Change Password</a></li>
@@ -38,15 +38,15 @@
                 <ul class="nav in" id="side-menu">
                     <li>&nbsp; </li>
                     <li class="">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>&nbsp;&nbsp;Products<span class="fa arrow"></span></a>
+                        <a href="#"><i class=""></i>&nbsp;&nbsp;Product Catalog<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;" ng-init="Tab='Home_Site'">
-                            <li ng-show="user.super_user_access==='Y'"><a ui-sref=".Site_site">Sports</a> </li>
+                            <li ng-show="true"><a ui-sref="home.ProductsBears">Sports</a> </li>
                             <li ng-show="true" id="li-users"><a ui-sref="home.ProductsBears">Bears</a> </li>
-                            <li ng-show="true"><a ui-sref="home.Site_routes">Souvenirs</a> </li>
+                            <li ng-show="true"><a ui-sref="home.ProductsBears">Souvenirs</a> </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                    <li ng-show="user.userType==='Admin'"><a ui-sref="home.AdminProducts"><i class="fa fa-cube fa-fw"></i>&nbsp;&nbsp;Admin Products</a> </li>
+                    <li ng-show="user.userType==='Admin'"><a ui-sref="home"><i class=""></i>&nbsp;&nbsp;Admin Products</a> </li>
                     <li ng-click="ChangePasswd()">
                         <a href="">
                             <i class="fa fa-key fa-fw"></i>&nbsp;&nbsp;Change

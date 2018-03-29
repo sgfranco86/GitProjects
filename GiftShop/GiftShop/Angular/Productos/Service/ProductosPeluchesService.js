@@ -10,7 +10,11 @@
         };
 
         this.RemoveFromCart = function (Product) {
+<<<<<<< HEAD
             return $http.post(this.urlBase + 'RemoveProductoPeluche', Product).then(handleSuccess, handleError)
+=======
+            return $http.post(this.urlBase + 'deleteFromShoppingCart', Product).then(handleSuccess, handleError);
+>>>>>>> Second-commit
         };
 
 

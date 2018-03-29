@@ -102,11 +102,28 @@
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         name: 'Giftshop',
-                        files: ['Angular/Productos/Controller/ProductosPeluchesController.js', 'Angular/Productos/Service/ProductosPeluchesService.js']
+                        files: ['Angular/Productos/Controller/ProductosPeluchesController.js', 'Angular/Productos/Service/ProductosPeluchesService.js','Angular/Shopping_Cart/Service/ShoppingCartService.js']
                     });
                 }]
             }, data: {
                 displayName: 'BearProducts'
+            }
+        }).state('home.shopping_Cart', {
+            url: '/shopping_Cart',
+            views: {
+                'container@home': {
+                    templateUrl: 'Angular/Shopping_Cart/View/ShoppingCart.html?' + secs,
+                    controller: 'ShoppingCartController'
+                }
+            }, resolve: {
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'Giftshop',
+                        files: ['Angular/Shopping_Cart/Controller/ShoppingCartController.js', 'Angular/Shopping_Cart/Service/ShoppingCartService.js']
+                    });
+                }]
+            }, data: {
+                displayName: 'ShoppingCart'
             }
         });
     }]).run(['$rootScope', '$state', 'localStorageService', '$http',
