@@ -1,7 +1,7 @@
 ﻿'use strict';
 angular.module('Giftshop').service('AuthenticationService', ['Base64', '$http', '$q', 'localStorageService', '$rootScope', function (Base64, $http, $q, localStorageService, $rootScope) {
     this.Logon = function (id, pwd) {
-        return $http.post('/api/Authentication/Logon', { user: id, password: pwd }).then(handleSuccess, handleError);
+        return $http.post('/api/Authentication/Logon', { userid: id, password: pwd }).then(handleSuccess, handleError);
     };
 
     this.SetCredentials = function (response) {

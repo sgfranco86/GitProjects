@@ -1,52 +1,61 @@
 ﻿<html>
 <head>
-<style>
-    .container {
-        position: relative;
-        text-align: center;
-        color: white;
-    }
+    <style>
+        /*.container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
 
-    .bottom-left {
-        position: absolute;
-        bottom: 8px;
-        left: 12px;
-        font-weight: bold;
-    }
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 180px;
+            font-weight: bold;
+        }
 
-    .bottom-right {
-        position: absolute;
-        bottom: 8px;
-        right: 65%;
-        font-weight: bold;
-    }
-    .centered {
-    position: absolute;
-    top: 53%;
-    left: 18%;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    color:white;
-    font-size: large;
-}
+        .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 730px;
+            font-weight: bold;
+        }*/
 
-</style>
+        .centered {
+            position: absolute;
+            top: 30%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            color: lightblue;
+            font-size: x-large;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <img src="../../../Images/osopeluche.jpg" class="navbar-left" width="30%" height="35%" />
-        <div class="bottom-left" style="color:darkslategrey; cursor:pointer" ng-click="minorQty(1)">- Remove</div>
-        <div class="bottom-right" style="color:darkslategrey; cursor:pointer" ng-click="setQty(1)">+ Add</div>
-        <div class="centered" style="color:white; font-weight:bolder">{{product.quantity}}</div>
-        
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <button type="button" class="btn-success centered" ng-click="saveToCart()"><span class="btn btn-xl glyphicon glyphicon-save"></span>Add Item To Cart</button>
+        <div class="row">
+            <img src="../../../Images/osopeluche.jpg" class="navbar-left" width="30%" height="35%" />
+            <div class="centered" style="color:lightblue; font-weight:bolder; font-size:x-large;">{{product.quantity}}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <span class="" style="color:darkslategrey; cursor:pointer" ng-click="minorQty(1)">- Remove</span>
+            </div>
+            <div class="col-md-3">
+                <span class="" style="color:darkslategrey; cursor:pointer" ng-click="setQty(1)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Add</span>
+            </div>
 
         </div>
 
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <button type="button" class="btn btn-primary text-center" ng-click="saveToCart()"><i class="btn fa-1x btn-xl glyphicon glyphicon-shopping-cart"></i>Add Item To Cart</button>
+            </div>
+            <div class="col-md-2 text-center">
+                <button type="button" class="btn btn-danger text-center" ng-click="RemoveFromCart()"><i class="btn fa-1x btn-xl glyphicon glyphicon-trash"></i>Delete Item from Cart</button>
+            </div>
+        </div>
     </div>
-
 </body>
 </html>

@@ -27,7 +27,7 @@ namespace GiftShop.Controllers
             {
                 if (_service.Authenticate(user))
                 {
-                    core.User _usr = _Uservice.GetUser(user.user.ToString(), user.password.ToString());
+                    core.User _usr = _Uservice.GetUser(user.userid.ToString(), user.password.ToString());
                     if (_usr != null)
                     {
                         return Request.CreateResponse(HttpStatusCode.OK,
@@ -36,7 +36,7 @@ namespace GiftShop.Controllers
                             status = "ok",
                             user = new
                             {
-                              user = _usr.user,
+                              user = _usr.userid,
                               password = _usr.password,
                               Name = _usr.Name,
                              Lastname =  _usr.Lastname,

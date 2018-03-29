@@ -1,6 +1,5 @@
 ﻿using GiftShop.core.IDatos;
 using System;
-using Giftshop.Domain;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

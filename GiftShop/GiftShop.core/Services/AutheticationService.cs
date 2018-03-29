@@ -1,7 +1,6 @@
 ﻿
 using GiftShop.core.IDatos;
 using System;
-using Giftshop.Domain;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +25,7 @@ namespace GiftShop.core.Services
                 {
                     User obj = (from user in db.Users
                                  where
-user.password == u.password && user.user== u.user
+user.password == u.password && user.userid== u.userid
                                  select user).FirstOrDefault();
 
                      

@@ -17,16 +17,16 @@ namespace GiftShop.core
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public User()
         {
-            this.Shopping_Cart = new HashSet<Shopping_Cart>();
+            this.ShoppingCarts = new HashSet<ShoppingCart>();
         }
     
-        public string user { get; set; }
+        public string userid { get; set; }
         public string password { get; set; }
         public string Name { get; set; }
         public string Lastname { get; set; }
         public string userType { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Shopping_Cart> Shopping_Cart { get; set; }
+        public virtual ICollection<ShoppingCart> ShoppingCarts { get; set; }
     }
 }

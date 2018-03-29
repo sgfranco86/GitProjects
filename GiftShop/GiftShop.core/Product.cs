@@ -17,7 +17,7 @@ namespace GiftShop.core
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Product()
         {
-            this.Shopping_Cart = new HashSet<Shopping_Cart>();
+            this.ShoppingCarts = new HashSet<ShoppingCart>();
         }
     
         public string IdProduct { get; set; }
@@ -25,8 +25,10 @@ namespace GiftShop.core
         public string Image { get; set; }
         public string Description { get; set; }
         public string Category { get; set; }
+        public decimal Price { get; set; }
+        public Nullable<int> Quantity { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Shopping_Cart> Shopping_Cart { get; set; }
+        public virtual ICollection<ShoppingCart> ShoppingCarts { get; set; }
     }
 }

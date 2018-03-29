@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using GiftShop.core.IDatos;
 using GiftShop.core.Services;
 using GiftShop.core.Services.Productos;
+using GiftShop.core.Services.ShoppingCart;
 
 namespace GiftShop.ninject
 {
@@ -85,6 +86,7 @@ namespace GiftShop.ninject
             this.Bind<IAuthentication>().To<AutheticationService>();
             this.Bind<IUser>().To<UserService>();
             this.Bind<IProductosPeluche>().To<ProductoPelucheService>();
+            this.Bind<IShoppingCart>().To<ShoppingCartService>();
         }
     }
 }
